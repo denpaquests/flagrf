@@ -10,6 +10,7 @@
     --dnp__grey: #dedede;
 
     /** font-sizes */
+    --dnp__font-size-page: 20px;
     --dnp__font-size-title: 18px;
     --dnp__font-size-description: 16px;
 
@@ -202,6 +203,10 @@ body {
 }
 
 /** font-sizes */
+div.t480__descr {
+    font-size: var(--dnp__font-size-page);
+}
+
 .t-descr {
     font-size: var(--dnp__font-size-description);
     font-weight: var(--dnp__font-weight-description);
