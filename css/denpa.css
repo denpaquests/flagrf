@@ -1,9 +1,17 @@
+/**
+ * Colors
+ */
+
 :root {
     --dnp__primary-color: #002d6d;
     --dnp__secondary-color: #ff0000;
     --dnp__light-grey: #eeeeee;
     --dnp__grey: #dedede;
 }
+
+/**
+ * Animations
+ */
 
 @keyframes dnp__pulse {
 
@@ -29,21 +37,9 @@
 
 }
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
-body {
-    position: relative;
-}
-
 /**
- * Full width top menu
+ * Slide down arrow
  */
-.t466 {
-    left: 0;
-    right: 0;
-}
 
 .dnp__down-arrow {
     position: relative;
@@ -70,6 +66,10 @@ body {
 t670__imgwrapper {
     position: relative;
 }
+
+/**
+ * Modal windows
+ */
 
 .dnp__modal {
     position: fixed;
@@ -168,3 +168,22 @@ t670__imgwrapper {
     transition: all .2s ease-in-out;
     pointer-events: none;
 }
+
+/**
+ * Theme overrides
+ */
+
+body {
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/** full width top menu */
+.t466 {
+    left: 0;
+    right: 0;
+}
+
