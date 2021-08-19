@@ -5,12 +5,6 @@
     --dnp__grey: #dedede;
 }
 
-::-webkit-scrollbar { width: 0; }
-
-body {
-    position: relative;
-}
-
 @keyframes dnp__pulse {
 
     from {
@@ -33,6 +27,22 @@ body {
         transform: translateY(0);
     }
 
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    position: relative;
+}
+
+/**
+ * Full width top menu
+ */
+.t466 {
+    left: 0;
+    right: 0;
 }
 
 .dnp__down-arrow {
