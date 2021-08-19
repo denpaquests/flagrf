@@ -1,0 +1,160 @@
+:root {
+    --dnp__primary-color: #002d6d;
+    --dnp__secondary-color: #ff0000;
+    --dnp__light-grey: #eeeeee;
+    --dnp__grey: #dedede;
+}
+
+::-webkit-scrollbar { width: 0; }
+
+body {
+    position: relative;
+}
+
+@keyframes dnp__pulse {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+
+}
+
+@keyframes dnp__bob {
+
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+.dnp__down-arrow {
+    position: relative;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: dnp__bob .7s infinite alternate ease-in-out;
+    z-index: 1000;
+}
+
+.dnp__down-arrow-link {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    color: white !important;
+}
+
+.dnp__down-arrow-link > svg {
+    pointer-events: none;
+}
+
+t670__imgwrapper {
+    position: relative;
+}
+
+.dnp__modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background: white;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.dnp__modal-visible {
+    opacity: 1;
+}
+
+.dnp__modal-head {
+    height: 60px;
+    background: var(--dnp__light-grey);
+    border-bottom: 1px solid var(--dnp__grey);
+}
+
+.dnp__modal-body {
+    height: 100%;
+}
+
+.dnp__modal-close-btn {
+    float: right;
+    height: 60px;
+    width: 60px;
+    background: red;
+    text-decoration: none;
+    opacity: .5;
+    transition: opacity .2s;
+}
+
+.dnp__modal-close-btn:hover {
+    opacity: 1;
+}
+
+.dnp__modal-close-btn:after {
+    content: '+';
+    transform: rotate(45deg);
+    color: white;
+    line-height: 60px;
+    font-size: 4em;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.dnp__modal-body-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+}
+
+.dnp__img-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: right;
+}
+
+.dnp__img-button > a {
+    float: right;
+    color: var(--dnp__secondary-color);
+    width: 96px;
+    height: 96px;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 12px white;
+    animation: dnp__pulse .7s infinite alternate ease-in-out;
+    margin-right: 250px;
+    margin-bottom: 25px;
+}
+
+.dnp__img-button > a:hover,
+.dnp__img-button > a:active {
+    animation: none;
+}
+
+.dnp__img-button > a:active {
+    transform: scale(.95);
+}
+
+.dnp__img-button > a:hover > svg {
+    color: var(--dnp__secondary-color);
+}
+
+.dnp__img-button > a > svg {
+    color: var(--dnp__primary-color);
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+}
