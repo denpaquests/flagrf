@@ -53,7 +53,7 @@
     right: 0;
     margin: 0 auto;
     animation: dnp__bob .7s infinite alternate ease-in-out;
-    z-index: 1000;
+    z-index: 500;
 }
 
 .dnp__down-arrow-link {
