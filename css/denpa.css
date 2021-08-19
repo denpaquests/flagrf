@@ -3,10 +3,15 @@
  */
 
 :root {
+    /** colors */
     --dnp__primary-color: #002d6d;
     --dnp__secondary-color: #ff0000;
     --dnp__light-grey: #eeeeee;
     --dnp__grey: #dedede;
+
+    /** font-sizes */
+    --dnp__font-size-title: 18px;
+    --dnp__font-size-description: 16px;
 }
 
 /**
@@ -187,7 +192,16 @@ body {
     right: 0;
 }
 
-/** Font-weight in flag colors section */
+/** font-weight in flag colors section */
 #rec344816326 .t396 .tn-elem .tn-atom {
     font-weight: 700;
+}
+
+/** font-sizes */
+.t-descr {
+    font-size: var(--dnp__font-size-description);
+}
+
+.t-name {
+    font-size: var(--dnp__font-size-title);
 }
