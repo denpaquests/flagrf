@@ -12,6 +12,10 @@
     /** font-sizes */
     --dnp__font-size-title: 18px;
     --dnp__font-size-description: 16px;
+
+    /** font-weights */
+    --dnp__font-weight-title: 700;
+    --dnp__font-weight-description: 700;
 }
 
 /**
@@ -200,8 +204,10 @@ body {
 /** font-sizes */
 .t-descr {
     font-size: var(--dnp__font-size-description);
+    font-weight: var(--dnp__font-weight-description);
 }
 
 .t-name {
     font-size: var(--dnp__font-size-title);
+    font-weight: var(--dnp__font-weight-title);
 }
