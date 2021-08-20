@@ -15,8 +15,8 @@
     --dnp__font-size-description: 16px;
 
     /** font-weights */
-    --dnp__font-weight-title: 700;
-    --dnp__font-weight-description: 700;
+    --dnp__font-weight-title: 700;              /** 500 - normal, 700 - bold */
+    --dnp__font-weight-description: 700;        /** 500 - normal, 700 - bold */
 }
 
 /**
